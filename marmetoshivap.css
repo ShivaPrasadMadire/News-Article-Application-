@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 10px;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+#container {
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+#top-container {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1em;
+}
+
+#top-container h1 {
+    color: #084741;
+}
+
+#top-container p {
+    color: #5E915F;
+}
+
+#news-container {
+    display: flex;
+}
+
+.article-container {
+    padding: 15px;
+    margin: 20px;
+    min-width: 300px;
+    height: auto;
+    text-align: center;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    border-style: none;
+}
+
+.article-container img {
+    height: 250px;
+    width: 250px;
+    margin-bottom: 10px;
+    object-fit: cover;
+}
+
+.article-container p {
+    color: #90C9C4;
+}
+
+.article-container h2 {
+    color: #0B413C;
+}
+
+.article-content-1 {
+    border-top-left-radius: 125px;
+    border-top-right-radius: 125px;
+}
+
+.article-content-2 {
+    border-radius: 125px;
+}
+
+.article-content-3 {
+    border-bottom-left-radius: 125px;
+    border-bottom-right-radius: 125px;
+}
+
+.article-container a {
+    color: #0B413C;
+    font-weight: 300;
+}
+
+/* Your existing styles */
+
+.view-button {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.view-button a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #084741;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.view-button a:hover {
+    background-color: #065336;
+}
+
+#top-arrow {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+    background-color: #084741;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+/* Mobile styles (up to 767px) */
+@media (max-width: 767px) {
+    #top-container {
+        text-align: center;
+    }
+
+    #news-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .article-container {
+        margin: 20px 0;
+    }
+}
+
+/* Tablet styles (768px to 949px) */
+@media (min-width: 768px) and (max-width: 949px) {
+    .article-container {
+        font-size: 18px;
+    }
+
+    #news-container {
+        justify-content: space-around;
+    }
+}
+
+/* Desktop styles (950px and above) */
+@media (min-width: 950px) {
+    #news-container {
+        justify-content: space-around;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .view-button {
+        max-width: 300px;
+        margin: 20px auto;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+.view-button {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.view-button a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #084741;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#top-arrow {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+    background-color: #084741;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+@media (max-width: 949px) {
+    #top-container {
+        text-align: center;
+    }
+
+    .view-button {
+        text-align: center;
+    }
+
+    #news-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .article-container {
+        margin: 20px 0;
+    }
+}
+
+@media (min-width: 950px) {
+    #news-container {
+        justify-content: space-around;
+    }
+} */
